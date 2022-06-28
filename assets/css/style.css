@@ -6,10 +6,17 @@
     --key-lime: #e6f9afff;
     --light-goldenrod-yellow: #f0facdff;
     --beige: #f5fae0ff;
+    --white: #f0f0f0;
+    --trans-white:#f0f0f099;
+}
+
+.corpo {
+    margin: 0;
+    padding: 0;
 }
 
 .cabecalho {
-    background-color: var(--russian-violet);
+    background-color: var(--prussian-blue);
     color: var(--beige);
     display: flex;
     flex-direction: row;
@@ -20,12 +27,13 @@
 
 .logo {
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 0px;
     border-radius: 50%;
 }
 
 .logo:hover {
-    box-shadow: var(--green-sheen) 0px 0px 5px;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .menu {    
@@ -41,6 +49,7 @@
 
 .menu__item {
     padding: 1rem;
+    list-style: none;
 }
 
 .menu__link {
@@ -49,42 +58,82 @@
 }
 
 .menu__link:hover {
-    text-shadow: 1px 1px 10px var(--y-in-mn-blue);
+    text-shadow: 10px 10px 10px var(--russian-violet);
 }
 
 .principal {
     background-color: var(--key-lime);
+    padding: 2rem;
+    height: calc(100vh - 148px);
 }
 
 .calculadora {
+    background-color: var(--green-sheen);
+    position: relative;
     border: 1px solid var(--prussian-blue);
-    width: 200px;
-    height: 300px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1rem;
+    width: 300px;
+    box-sizing: border-box;
+    color: var(--russian-violet);
 }
 
 .calculadora__titulo {
     text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem auto;
 }
 
 .calculadora__resultado {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--white);
     border: 1px solid #0d0630ff;
     display: block;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 10px;
+    text-align: right;
+    height: 27px;
+}
+
+.calculadora__resultado:hover {
+    background-color: var(--trans-white);
+
 }
 
 .botoes {
-    /* display: flex; */
-    border: 1px solid var(--green-sheen);
-    
-    margin-left: 10px;
-    margin-right: 10px;
-
-    position: relative;
-
+    /* border: 1px solid var(--russian-violet); */
+    width: 100%;
 }
 
 .botao {
+    background-color: var(--white);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 1px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: var(--trans-white);
+}
+
+.rodape {
+    box-sizing: border-box;
+    background-color: var(--russian-violet);
     width: 100%;
-    height: 100%;
+    /* height: 50px; */
+    height: calc(100vh - 100px - 466px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__texto {
+    color: var(--beige);
+    text-align: center;
 }

@@ -7,12 +7,12 @@ Link para acessar a página:
 - HTML e CSS
 >  - [X] Cabeçalho
 >  - [X] Navegação
->  - [ ] Principal
->  - [ ] Rodapé
+>  - [X] Principal
+>  - [X] Rodapé
 
 - JavaScript
 
->  - [ ] Função Inserir
->  - [ ] Função Apagar
->  - [ ] Função Calcular
+>  - [X] Função Inserir
+>  - [X] Função Apagar
+>  - [X] Função Calcular
 
